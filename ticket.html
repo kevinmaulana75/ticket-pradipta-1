@@ -135,137 +135,70 @@
 				</div>
 
 				<!-- cards grid -->
-				<div class="grid md:grid-cols-3 gap-8 items-stretch">
-					<!-- ---- REGULER ---- -->
-					<div class="ticket-card flex flex-col" data-package="Reguler" data-price="Rp 50.000">
-						<!-- top section -->
-						<div class="p-8 pb-6 flex-1">
-							<div class="flex items-center gap-3 mb-6">
-								<span class="text-2xl">🎟️</span>
-								<div>
-									<p class="text-xs text-gray-500 uppercase tracking-widest">Paket</p>
-									<h3 class="text-xl font-bold">REGULER</h3>
+				<div class="flex justify-center">
+					<!-- VIP -->
+					<div class="group flex flex-col md:flex-row w-full max-w-4xl drop-shadow-[0_10px_10px_rgba(234,179,8,0.1)] hover:drop-shadow-[0_20px_30px_rgba(234,179,8,0.2)] transition-all duration-500">
+						<div class="flex-1 bg-[#0d0d0d] border border-yellow-500/50 border-b-0 md:border-b md:border-r-0 rounded-t-[32px] md:rounded-l-[32px] md:rounded-tr-none flex flex-col relative z-10">
+							<div class="p-8 pb-4 flex-1">
+								<div class="flex items-center gap-3 mb-6">
+									<span class="text-2xl">👑</span>
+									<div>
+										<p class="text-xs text-yellow-500 uppercase tracking-widest">
+											Paket
+										</p>
+										<h3 class="text-xl font-bold text-yellow-300">VIP</h3>
+									</div>
 								</div>
-							</div>
-							<div class="mb-6">
-								<p class="text-4xl font-extrabold">Rp 50K</p>
-								<p class="text-xs text-gray-500 mt-1">per tiket</p>
-							</div>
-							<ul class="space-y-3 text-sm text-gray-300">
-								<li class="flex gap-2">
-									<span class="text-purple-400">✓</span> Akses seluruh acara
-								</li>
-								<li class="flex gap-2">
-									<span class="text-purple-400">✓</span> Area penonton umum
-								</li>
-								<li class="flex gap-2">
-									<span class="text-gray-600">✗</span> <span class="text-gray-600">Merchandise eksklusif</span>
-								</li>
-								<li class="flex gap-2">
-									<span class="text-gray-600">✗</span> <span class="text-gray-600">Foto bersama bintang tamu</span>
-								</li>
-							</ul>
-						</div>
-						<!-- dashed divider notch -->
-						<div class="notch-row">
-							<div class="dot"></div>
-							<div class="line"></div>
-							<div class="dot"></div>
-						</div>
-						<!-- bottom CTA -->
-						<div class="p-6 pt-5">
-							<button onclick="openModal('Reguler', 'Rp 50.000')" class="w-full py-3 rounded-full border border-purple-600 text-purple-400 font-semibold text-sm hover:bg-purple-600 hover:text-white transition">
-								Pesan Sekarang
-							</button>
-						</div>
-					</div>
-
-					<!-- ---- FIRST CLASS (popular) ---- -->
-					<div class="ticket-card card-popular flex flex-col relative" data-package="First Class" data-price="Rp 120.000">
-						<div class="badge-popular">⭐ Popular</div>
-						<!-- top section -->
-						<div class="p-8 pb-6 flex-1">
-							<div class="flex items-center gap-3 mb-6">
-								<span class="text-2xl">💜</span>
-								<div>
-									<p class="text-xs text-purple-400 uppercase tracking-widest">Paket</p>
-									<h3 class="text-xl font-bold">FIRST CLASS</h3>
+								<div class="mb-6">
+									<p class="text-4xl font-extrabold text-yellow-300">
+										Rp 200K
+									</p>
+									<p class="text-xs text-gray-500 mt-1">per tiket</p>
 								</div>
+								<ul class="space-y-3 text-sm text-gray-300">
+									<li class="flex gap-2">
+										<span class="text-yellow-400">✓</span> Akses seluruh
+										acara
+									</li>
+									<li class="flex gap-2">
+										<span class="text-yellow-400">✓</span> Kursi VIP
+										eksklusif
+									</li>
+									<li class="flex gap-2">
+										<span class="text-yellow-400">✓</span> Merchandise
+										eksklusif
+									</li>
+									<li class="flex gap-2">
+										<span class="text-yellow-400">✓</span> Foto bersama
+										bintang tamu
+									</li>
+								</ul>
 							</div>
-							<div class="mb-6">
-								<p class="text-4xl font-extrabold text-purple-300">Rp 120K</p>
-								<p class="text-xs text-gray-500 mt-1">per tiket</p>
+							<div class="p-6 pt-4">
+								<button onclick="openModal('VIP', 'Rp 200.000')" class="w-full py-3 rounded-full border border-yellow-500 text-yellow-400 font-semibold text-sm hover:bg-yellow-500 hover:text-black transition">
+									Pesan Sekarang
+								</button>
 							</div>
-							<ul class="space-y-3 text-sm text-gray-300">
-								<li class="flex gap-2">
-									<span class="text-purple-400">✓</span> Akses seluruh acara
-								</li>
-								<li class="flex gap-2">
-									<span class="text-purple-400">✓</span> Kursi prioritas (barisan depan)
-								</li>
-								<li class="flex gap-2">
-									<span class="text-purple-400">✓</span> Merchandise eksklusif
-								</li>
-								<li class="flex gap-2">
-									<span class="text-gray-600">✗</span> <span class="text-gray-600">Foto bersama bintang tamu</span>
-								</li>
-							</ul>
 						</div>
-						<div class="notch-row">
-							<div class="dot"></div>
-							<div class="line"></div>
-							<div class="dot"></div>
+						<!-- Tear Line -->
+						<div class="relative z-20 flex items-center justify-center md:flex-col -my-0.5 md:-my-0 md:-mx-0.5">
+							<div class="w-[90%] h-[2px] md:w-[2px] md:h-[90%] border-t-2 md:border-t-0 md:border-l-2 border-dashed border-yellow-500/30"></div>
 						</div>
-						<div class="p-6 pt-5">
-							<button onclick="openModal('First Class', 'Rp 120.000')" class="w-full py-3 rounded-full bg-gradient-to-r from-purple-600 to-violet-600 text-white font-semibold text-sm hover:opacity-90 transition shadow-lg shadow-purple-900">
-								Pesan Sekarang
-							</button>
-						</div>
-					</div>
-
-					<!-- ---- VIP ---- -->
-					<div class="ticket-card flex flex-col" data-package="VIP" data-price="Rp 200.000">
-						<!-- top section -->
-						<div class="p-8 pb-6 flex-1">
-							<div class="flex items-center gap-3 mb-6">
-								<span class="text-2xl">👑</span>
-								<div>
-									<p class="text-xs text-yellow-500 uppercase tracking-widest">Paket</p>
-									<h3 class="text-xl font-bold text-yellow-300">VIP</h3>
+						<!-- Stub -->
+						<div class="bg-[#1a1a1a] border border-yellow-500/50 border-t-0 md:border-t md:border-l-0 rounded-b-[32px] md:rounded-r-[32px] md:rounded-bl-none py-6 md:py-0 md:w-40 flex flex-col items-center justify-center relative z-10 transition-transform duration-500 origin-top md:origin-left group-hover:translate-y-2 md:group-hover:translate-y-0 md:group-hover:translate-x-2 group-hover:rotate-[0.5deg]">
+							<div class="flex flex-col items-center md:-rotate-90">
+								<div class="flex gap-2 mb-2">
+									<span class="w-1.5 h-1.5 rounded-full bg-yellow-900/30"></span>
+									<span class="w-1.5 h-1.5 rounded-full bg-yellow-900/30"></span>
+									<span class="w-1.5 h-1.5 rounded-full bg-yellow-900/30"></span>
+									<span class="w-1.5 h-1.5 rounded-full bg-yellow-900/30"></span>
+									<span class="w-1.5 h-1.5 rounded-full bg-yellow-900/30"></span>
 								</div>
+								<span class="text-lg font-extrabold text-yellow-900/30 tracking-[0.2em]">PRADIPTA</span>
 							</div>
-							<div class="mb-6">
-								<p class="text-4xl font-extrabold text-yellow-300">Rp 200K</p>
-								<p class="text-xs text-gray-500 mt-1">per tiket</p>
-							</div>
-							<ul class="space-y-3 text-sm text-gray-300">
-								<li class="flex gap-2">
-									<span class="text-yellow-400">✓</span> Akses seluruh acara
-								</li>
-								<li class="flex gap-2">
-									<span class="text-yellow-400">✓</span> Kursi VIP eksklusif
-								</li>
-								<li class="flex gap-2">
-									<span class="text-yellow-400">✓</span> Merchandise eksklusif
-								</li>
-								<li class="flex gap-2">
-									<span class="text-yellow-400">✓</span> Foto bersama bintang tamu
-								</li>
-							</ul>
-						</div>
-						<div class="notch-row">
-							<div class="dot"></div>
-							<div class="line"></div>
-							<div class="dot"></div>
-						</div>
-						<div class="p-6 pt-5">
-							<button onclick="openModal('VIP', 'Rp 200.000')" class="w-full py-3 rounded-full border border-yellow-500 text-yellow-400 font-semibold text-sm hover:bg-yellow-500 hover:text-black transition">
-								Pesan Sekarang
-							</button>
 						</div>
 					</div>
 				</div>
-				<!-- /grid -->
 
 				<!-- info strip -->
 				<div class="mt-12 flex flex-wrap justify-center gap-8 text-sm text-gray-400">
